@@ -5,7 +5,9 @@
 }
 
 html {
-  font-size: 62.5;
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* scroll-margin-bottom: smooth; */
 }
 
 
@@ -25,7 +27,73 @@ html {
   --Very-dark-blue: hsl(224, 21%, 14%);
 }
 
+/* HEADER ------------------------------------ */
+header {
+  padding: 1.7rem;
+  width: 100%;
+  min-width: 320px;
+  height: 4rem;
+}
 
+.notifications{
+  display: inline;
+  font-size: 2rem;
+}
+.notifications-number{
+  color: var(--Very-light-grayish-blue);
+  font-size: 1.9rem;
+  background-color: var(--Blue);
+  padding: 0 1rem 0.2rem 1rem;
+  border-radius: 0.5rem;
+}
+.mark-read{
+  display: inline;
+  position: relative;
+  left: 5rem;
+  font-size: 1.3rem;
+  color: var(--Blue);
+}
+
+main{
+  padding: 2rem;
+  width: 100%;
+  min-width: 320px;
+}
+
+article{
+  margin-bottom: 1rem;
+  padding: 1rem 0 1.7rem 0;
+  border-radius: 1rem;
+}
+
+img {
+  width: 4rem;
+}
+
+/* UNREAD notifications -------------------------------*/
+.unread-notif{
+  padding: 1rem 0 1.7rem 0;
+  border-radius: 1rem;
+}
 .mark-webber{
-  border: solid 0.1rem red;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 0 2.5rem 1rem;
+  background-color: var(--Light-grayish-blue-1);
+}
+.mark-webber p{
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+.mark-webber span{
+  position: absolute;
+  top: 12rem;
+  left: 8rem;
+}
+.angela-gray{
+  background-color: var(--Light-grayish-blue-1);
+}
+.jacob-thompson{
+  background-color: var(--Light-grayish-blue-1);
 }
