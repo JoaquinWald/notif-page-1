@@ -46,6 +46,7 @@ header {
   padding: 0 1rem 0.2rem 1rem;
   border-radius: 0.5rem;
 }
+
 .mark-read{
   display: inline;
   position: relative;
@@ -114,6 +115,15 @@ img {
   cursor: pointer;
   color: var(--Blue);
 }
+.mark-webber .circle-mark{
+  position: absolute;
+  top: 10.4rem;
+  left: 31.7rem;
+  width: 8px;
+  height: 8px;
+  background: var(--Red);
+  border-radius: 5px;
+}
 
 /* ANGELA GRAY */
 .angela-gray{
@@ -143,6 +153,15 @@ img {
 .strong-angela__name:hover{
   cursor: pointer;
   color: var(--Blue);
+}
+.angela-gray .circle-angela{
+  position: absolute;
+  top: 17.3rem;
+  left: 26.5rem;
+  width: 8px;
+  height: 8px;
+  background: var(--Red);
+  border-radius: 5px;
 }
 
 /* JACOB THOMPSON */
@@ -178,6 +197,15 @@ img {
 .strong-jacob__name:hover{
   cursor: pointer;
   color: var(--Blue);
+}
+.jacob-thompson .circle-jacob{
+  position: absolute;
+  top: 26rem;
+  left: 21rem;
+  width: 8px;
+  height: 8px;
+  background: var(--Red);
+  border-radius: 5px;
 }
 
 /* READ NOTIF ---------------------------------- */

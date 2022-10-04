@@ -29,15 +29,17 @@
 <body>
 
   <header>
+
     <section class="notifications">
       <strong>Notifications</strong>
     </section>
     <span class="notifications-number">3</span>
 
 
-    <section class="mark-read">
+    <section onclick="markNumber()" class="mark-read">
       Mark all as read
     </section>
+
   </header>
 
 
@@ -49,7 +51,10 @@
         
         <article class="mark-webber">
           <img src="./assets/images/avatar-mark-webber.webp" alt="Mark">
-          <p><strong class="strong-mark__name">Mark Webber</strong> reacted to your recent post <strong class="strong-mark">My first tournament today!</strong></p>
+          <p><strong class="strong-mark__name">Mark Webber</strong> reacted to your recent post
+            <strong class="strong-mark">My first tournament today!</strong>
+          </p>
+          <span class="circle-mark"></span>
           <span>
             1m ago
           </span>
@@ -58,6 +63,7 @@
         <article class="angela-gray">
           <img src="./assets/images/avatar-angela-gray.webp" alt="Angela">
           <p><strong class="strong-angela__name">Angela Gray</strong> followed you</p>
+          <span class="circle-angela"></span>
           <span>
             5m ago
           </span>
@@ -67,6 +73,7 @@
           <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob">
           <p><strong class="strong-jacob__name">Jacob Thompson</strong> has joined your
             <br> group <strong class="strong-jacob">Chess Club</strong></p>
+            <span class="circle-jacob"></span>
           <span>
             1 day ago
           </span>
@@ -118,7 +125,7 @@
     </section>
   </main>
 
-
+  <script src="./index.js"></script>
 
 
   <!-- <div class="attribution">
