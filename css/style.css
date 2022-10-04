@@ -37,11 +37,11 @@ header {
 
 .notifications{
   display: inline;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .notifications-number{
   color: var(--Very-light-grayish-blue);
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   background-color: var(--Blue);
   padding: 0 1rem 0.2rem 1rem;
   border-radius: 0.5rem;
@@ -50,7 +50,7 @@ header {
 .mark-read{
   display: inline;
   position: relative;
-  left: 5rem;
+  left: 2rem;
   font-size: 1.3rem;
   color: var(--Blue);
 }
@@ -59,19 +59,21 @@ header {
 }
 
 main{
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   min-width: 320px;
 }
 /* All the notifications */
 article{
+  /* min-width: 320px; */
+  /* height: 10rem; */
   margin-bottom: 1rem;
   padding: 1rem 0 1.7rem 0;
   border-radius: 1rem;
 }
 
 img {
-  width: 4rem;
+  width: 3.5rem;
 }
 
 /* UNREAD notifications -------------------------------*/
@@ -83,21 +85,27 @@ img {
 /* MARK WEBBER */
 .mark-webber{
   display: flex;
-  width: 100%;
+  width: 98%;
+  max-width: 375px;
   align-items: center;
   padding: 1rem 0 2.5rem 1rem;
+  margin: .5rem auto;
   background-color: var(--Very-light-grayish-blue);
 }
 .mark-webber p{
+  /* min-width: 250px; */
+  max-width: 20rem;
   font-size: 1.3rem;
   padding-left: 1rem;
   line-height: 1.7rem;
   color: var(--Dark-grayish-blue);
 }
-.mark-webber span{
+.mark-webber .time-post__mark{
   position: absolute;
-  top: 12rem;
-  left: 8rem;
+  /* right: calc(45% + 63px); */
+  padding-left: 4.4rem;
+  top: 13rem;
+  width: 40%;
   font-size: 1.2rem;
   color: var(--Grayish-blue);
 }
@@ -115,35 +123,44 @@ img {
   cursor: pointer;
   color: var(--Blue);
 }
+.mark-webber .circle-mark__container{
+  position: absolute;
+  top: .5rem;
+}
 .mark-webber .circle-mark{
   position: absolute;
-  top: 10.4rem;
-  left: 31.7rem;
+  top: 10rem;
+  left: 26.5rem;
   width: 8px;
   height: 8px;
-  background: var(--Red);
   border-radius: 5px;
+  background: var(--Red);
 }
 
 /* ANGELA GRAY */
 .angela-gray{
   display: flex;
-  width: 100%;
+  width: 98%;
+  max-width: 375px;
   align-items: center;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 0 2.5rem 1rem;
+  margin: .5rem auto;
   background-color: var(--Very-light-grayish-blue);
 }
 .angela-gray p{
+  max-width: 20rem;
   font-size: 1.3rem;
   padding-left: 1rem;
   padding-bottom: 1.5rem;
   line-height: 1.7rem;
   color: var(--Dark-grayish-blue);
 }
-.angela-gray span{
+.angela-gray .time-post__angela{
   position: absolute;
-  top: 19rem;
-  left: 8rem;
+  /* right: calc(35% + 46px); */
+  padding-left: 4.4rem;
+  top: 20rem;
+  width: 40%;
   font-size: 1.2rem;
   color: var(--Grayish-blue);
 }
@@ -154,34 +171,43 @@ img {
   cursor: pointer;
   color: var(--Blue);
 }
+.angela-gray .circle-angela__container{
+  position: absolute;
+  top: 1.5rem;
+}
 .angela-gray .circle-angela{
   position: absolute;
   top: 17.3rem;
   left: 26.5rem;
   width: 8px;
   height: 8px;
-  background: var(--Red);
   border-radius: 5px;
+  background: var(--Red);
 }
 
 /* JACOB THOMPSON */
 .jacob-thompson{
   display: flex;
-  width: 100%;
+  width: 98%;
+  max-width: 375px;
   align-items: center;
-  padding: 1rem 0 2rem 1rem;
+  padding: 1rem 0 2.5rem 1rem;
+  margin: .5rem auto;
   background-color: var(--Very-light-grayish-blue);
 }
 .jacob-thompson p{
+  max-width: 20rem;
   font-size: 1.3rem;
   padding-left: 1rem;
   line-height: 1.7rem;
   color: var(--Dark-grayish-blue);
 }
-.jacob-thompson span{
+.jacob-thompson .time-post__jacob{
   position: absolute;
-  top: 27.5rem;
-  left: 8rem;
+  /* right: calc(45% + 32px); */
+  padding-left: 4.4rem;
+  top: 29.5rem;
+  width: 40%;
   font-size: 1.2rem;
   color: var(--Grayish-blue);
 }
@@ -198,10 +224,14 @@ img {
   cursor: pointer;
   color: var(--Blue);
 }
+.jacob-thompson .circle-jacob__container{
+  position: absolute;
+  top: 1rem;
+}
 .jacob-thompson .circle-jacob{
   position: absolute;
   top: 26rem;
-  left: 21rem;
+  left: 26.5rem;
   width: 8px;
   height: 8px;
   background: var(--Red);
@@ -214,30 +244,38 @@ img {
 }
 /* RIZKY */
 .Rizky{
-  display: flex;
-  width: 100%;
+  /* display: flex; */
+  width: 98%;
+  max-width: 375px;
   align-items: center;
-  padding: .1rem 0 2rem 1rem;
+  padding: 1rem 0 2rem 1rem;
+  margin: .5rem auto;
 }
 .Rizky .p1{
+  position: relative;
+  top: -3.7rem;
+  max-width: 20rem;
   font-size: 1.3rem;
-  padding-left: 1rem;
+  padding-left: 4.6rem;
   line-height: 1.7rem;
   color: var(--Dark-grayish-blue);
 }
-.Rizky span{
+.Rizky .time-post__rizky{
   position: absolute;
-  top: 35.7rem;
-  left: 8rem;
+  top: 40.2rem;
+  padding-left: 4.6rem;
   font-size: 1.2rem;
   color: var(--Grayish-blue);
 }
-.private-message{
+.Rizky .private-message{
+  /* display: flex; */
   position: relative;
-  width: 60%;
-  top: -1rem;
-  left: 6rem;
-  padding: 1.5rem;
+  /* width: 65%; */
+  height: 9.7rem;
+  width: 20rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  margin-left: 4.4rem;
+  margin-top: -1rem;
   font-size: 1.1rem;
   border: solid .1rem var(--Light-grayish-blue-2);
   border-radius: .5rem;
@@ -258,27 +296,37 @@ img {
 /* KIMBERLY */
 .kimberly{
   display: flex;
-  width: 80%;
+  width: 98%;
+  max-width: 375px;
   align-items: center;
   padding: 1.8rem 0 2rem 1rem;
+  margin: .5rem auto;
 }
 .kimberly p{
+  max-width: 20rem;
   font-size: 1.3rem;
   padding-left: 1rem;
   line-height: 1.7rem;
   color: var(--Dark-grayish-blue);
 }
-.kimberly .img2{
+figure{
   position: absolute;
-  left: 30rem;
+  padding-left: 23.5rem;
+  padding-top: .1rem;
+}
+.kimberly .img2{
+  /* position: absolute; */
+  width: 2.9rem;
+  /* left: 26rem; */
 }
 .kimberly .img2:hover{
   cursor: pointer;
 }
-.kimberly span{
+.kimberly .time-post__kimberly{
   position: absolute;
-  top: 54rem;
-  left: 8rem;
+  padding-left: 4.4rem;
+  top: 60.5rem;
+  width: 40%;
   font-size: 1.2rem;
   color: var(--Grayish-blue);
 }
@@ -293,20 +341,24 @@ img {
 /* NATHAN */
 .nathan{
   display: flex;
-  width: 97%;
+  width: 98%;
+  max-width: 375px;
   align-items: center;
   padding: 2rem 0 2rem 1rem;
+  margin: .5rem auto;
 }
 .nathan p{
+  max-width: 20rem;
   line-height: 1.7rem;
   font-size: 1.3rem;
   padding-left: 1rem;
   color: var(--Dark-grayish-blue);
 }
-.nathan span{
+.nathan .time-post__nathan{
   position: absolute;
-  top: 64.5rem;
-  left: 8rem;
+  top: 71.4rem;
+  width: 40%;
+  padding-left: 4.4rem;
   font-size: 1.2rem;
   color: var(--Grayish-blue);
 }
@@ -327,11 +379,14 @@ img {
 /* ANNA */
 .anna{
   display: flex;
-  width: 100%;
+  width: 98%;
+  max-width: 375px;
   align-items: center;
   padding: 1.3rem 0 1rem 1rem;
+  margin: .5rem auto;
 }
 .anna p{
+  max-width: 20rem;
   position: relative;
   line-height: 1.7rem;
   font-size: 1.3rem;
@@ -339,10 +394,11 @@ img {
   top: -1rem;
   color: var(--Dark-grayish-blue);
 }
-.anna span{
+.anna .time-post__anna{
   position: absolute;
-  top: 71rem;
-  left: 8rem;
+  top: 78rem;
+  padding-left: 4.4rem;
+  width: 40%;
   font-size: 1.2rem;
   color: var(--Grayish-blue);
 }
